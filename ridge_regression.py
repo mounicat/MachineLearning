@@ -56,8 +56,8 @@ if __name__ == "__main__":
     data['y'] =  training_data['price']
    # plt.plot(data['x'],data['y'],'.')
    # plt.show()
-    for i in range(2,16):  #power of 1 is already there
-        colname = 'x_%d'%i      #new var will be x_power
+    for i in range(2,16):  
+        colname = 'x_%d'%i    
         data[colname] = data['x']**i
    # print data.head()
     print linear_regression_no_ridge(data,1)
